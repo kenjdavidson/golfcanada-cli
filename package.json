@@ -1,0 +1,29 @@
+{
+  "name": "golfcanada-cli",
+  "version": "1.0.0",
+  "description": "Access Golf Canada profile and scoring history through command line.",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "test",
+    "build": "npx tsc",
+    "clean": "rimraf dist"
+  },
+  "keywords": [
+    "golf-canada"
+  ],
+  "author": "kenjdavidson",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "commander": "^11.0.0",
+    "figlet": "^1.6.0"
+  },
+  "devDependencies": {
+    "@types/commander": "^2.12.2",
+    "@types/figlet": "^1.5.6",
+    "@types/node": "^20.4.0",
+    "node-jq": "^2.3.5",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.6"
+  }
+}
