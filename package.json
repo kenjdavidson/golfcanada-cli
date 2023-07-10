@@ -6,6 +6,7 @@
   "scripts": {
     "test": "test",
     "build": "npx tsc",
+    "build:watch": "npx tsc --watch",
     "clean": "rimraf dist"
   },
   "keywords": [
@@ -14,9 +15,11 @@
   "author": "kenjdavidson",
   "license": "ISC",
   "dependencies": {
+    "axios": "^1.4.0",
     "chalk": "^5.3.0",
     "commander": "^11.0.0",
-    "figlet": "^1.6.0"
+    "figlet": "^1.6.0",
+    "https": "^1.0.0"
   },
   "devDependencies": {
     "@types/commander": "^2.12.2",

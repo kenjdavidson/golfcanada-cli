@@ -1,12 +1,12 @@
-import figlet from 'figlet';
+#!/usr/bin/env node
+
 import { Command } from 'commander';
+import { loginCommand } from './commands/loginCommand';
 
 const program = new Command()
-    .version(process.env.npm_package_version || "x.y.z")
-    .description(process.env.npm_package_description || "Golf Canada API")
-    .parse(process.argv);
+    .version("1.0.0")
+    .description("Access Golf Canada profile and scoring history through command line.");
 
-const options = program.opts();
+program.addCommand(loginCommand);
 
-console.log(figlet.textSync("Golf Canada"));
-console.log(process.env)
+program.parse(process.argv);
